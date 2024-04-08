@@ -3,10 +3,11 @@ package com.example.productservice_dc_05.service;
 import com.example.productservice_dc_05.dto.ProductDto;
 import com.example.productservice_dc_05.models.category;
 import com.example.productservice_dc_05.models.products;
+import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.ArrayList;
-
+@Service
 public class FakeStoreProductService implements ProductService{
     RestTemplate template = new RestTemplate();
     public products convertToProducts(ProductDto prdto){
